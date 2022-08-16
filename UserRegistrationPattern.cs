@@ -17,7 +17,7 @@ namespace RegexUserRegistration
         //Mobile Num validation pattern
         public static string mobNumPattern = "^[1-9]{2}[ ]{1}[0-9]{10}$";
 
-        //Pswd rule 1 pattern
-        public static string pswdPattern = "^[a-zA-Z]{8,}$";
+        //Pswd pattern
+        string pswdPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*_+])[a-zA-Z0-9!@#$%&*_+]{8,}$";  //?= : lookahead, .* : start with any character or num
     }
 }
