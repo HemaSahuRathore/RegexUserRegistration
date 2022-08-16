@@ -1,7 +1,7 @@
 ﻿namespace RegexUserRegistration
 {    /// <summary>
-     /// UC 6 : As a User need to follow pre-defined Password rules.
-     /// Rule 2 - Should have at least 1 Upper Case        
+     /// UC 7 : As a User need to follow pre-defined Password rules.
+     /// Rule 3 – Should have at least 1 numeric number in the password    
      /// </summary>
     public class Program
     {
