@@ -46,5 +46,19 @@ namespace RegexUserRegistration
                 Console.WriteLine("Please enter valid Password", pswd);
         }
 
+        //to Validate all Email Addressess provided in PDF
+        public static void ValidateEmail(string[] input)
+        {
+            foreach (string email in input)
+            {
+                if (Regex.IsMatch(email, UserRegistrationPattern.emailPattern))
+                {
+                    Console.WriteLine("{0} - Valid", email);
+                }
+                else
+                    Console.WriteLine("{0} - Invalid", email);
+            }
+        }
+
     }
 }
