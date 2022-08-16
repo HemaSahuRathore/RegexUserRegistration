@@ -36,5 +36,15 @@ namespace RegexUserRegistration
                 Console.WriteLine("Please enter valid Mobile num with Country code", mobileNumber);
         }
 
+        //validate Password
+        public static void ValidatePaswd(string pswd)
+        {
+
+            if (Regex.IsMatch(pswd, UserRegistrationPattern.pswdPattern))
+                Console.WriteLine("{0} is Valid", pswd);
+            else
+                Console.WriteLine("Please enter valid Password", pswd);
+        }
+
     }
 }

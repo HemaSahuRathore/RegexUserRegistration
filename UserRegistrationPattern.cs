@@ -16,5 +16,8 @@ namespace RegexUserRegistration
 
         //Mobile Num validation pattern
         public static string mobNumPattern = "^[1-9]{2}[ ]{1}[0-9]{10}$";
+
+        //Pswd rule 1 pattern
+        public static string pswdPattern = "^[a-zA-Z]{8,}$";
     }
 }
