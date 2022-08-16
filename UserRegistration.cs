@@ -27,5 +27,14 @@ namespace RegexUserRegistration
                 Console.WriteLine("Please enter valid email ID", emailID);
         }
 
+        //validate mobile number
+        public static void ValidateMobile(string mobileNumber)
+        {
+            if (Regex.IsMatch(mobileNumber, UserRegistrationPattern.mobNumPattern))
+                Console.WriteLine("{0} is Valid", mobileNumber);
+            else
+                Console.WriteLine("Please enter valid Mobile num with Country code", mobileNumber);
+        }
+
     }
 }

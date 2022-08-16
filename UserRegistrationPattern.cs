@@ -13,5 +13,8 @@ namespace RegexUserRegistration
 
         //email validation pattern
         public static string emailPattern = "^[0-9a-z]+([._+-][0-9a-z]+)?(@[0-9a-z]+[.][a-z]{2,})(.[a-z]{2,})?$";
+
+        //Mobile Num validation pattern
+        public static string mobNumPattern = "^[1-9]{2}[ ]{1}[0-9]{10}$";
     }
 }
