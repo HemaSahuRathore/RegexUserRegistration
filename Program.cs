@@ -1,7 +1,6 @@
 ﻿namespace RegexUserRegistration
 {    /// <summary>
-     /// UC 8 : As a User need to follow pre-defined Password rules.
-     /// Rule 4 – Should have exactly one special character 
+     /// UC 9 : Should clear all email samples provided separately     
      /// </summary>
     public class Program
     {
