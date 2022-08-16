@@ -18,6 +18,6 @@ namespace RegexUserRegistration
         public static string mobNumPattern = "^[1-9]{2}[ ]{1}[0-9]{10}$";
 
         //Pswd pattern
-        string pswdPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*_+])[a-zA-Z0-9!@#$%&*_+]{8,}$";  //?= : lookahead, .* : start with any character or num
+        public static string pswdPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*_+])[a-zA-Z0-9!@#$%&*_+]{8,}$";  //?= : lookahead, .* : start with any character or num
     }
 }
