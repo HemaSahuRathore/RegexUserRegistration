@@ -17,5 +17,15 @@ namespace RegexUserRegistration
             else
                 Console.WriteLine("Please enter valid name");       
         }
+
+        //Validate Email Address 
+        public static void ValidateEmail(string emailID)
+        {
+            if (Regex.IsMatch(emailID, UserRegistrationPattern.emailPattern))
+                Console.WriteLine("{0} is Valid", emailID);
+            else
+                Console.WriteLine("Please enter valid email ID", emailID);
+        }
+
     }
 }
